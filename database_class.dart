@@ -4,14 +4,14 @@ import 'package:sqflite/sqflite.dart'; //sqflite: ^1.3.0
 import 'package:path_provider/path_provider.dart'; //path_provider: ^1.6.11
 
 class DatabaseClass {
-  static DatabaseUtil _databaseUtil;
+  static DatabaseClass _databaseUtil;
   static Database _dataBase;
 
-  DatabaseUtil._createInstance();
+  DatabaseClass._createInstance();
 
-  factory DatabaseUtil() {
+  factory DatabaseClass() {
     if (_databaseUtil == null) {
-      _databaseUtil = DatabaseUtil._createInstance();
+      _databaseUtil = DatabaseClass._createInstance();
     }
     return _databaseUtil;
   }
